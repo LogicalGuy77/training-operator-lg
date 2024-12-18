@@ -4,8 +4,8 @@ on:
   pull_request:
     branches:
       - v*-branch
-    #paths:
-    #  - VERSION
+    paths:
+      - VERSION
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
